@@ -1,10 +1,10 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay, Badge } from '@chakra-ui/react'
+import { Box, Text, LinkBox, LinkOverlay, Badge, useColorModeValue } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, tecnologia, thumbnail }) => (
-    <Box w="100%" textAlign="center">
+    <Box w="100%" textAlign="center" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}>
       <LinkBox cursor="pointer">
         <Image
           src={thumbnail}
@@ -25,7 +25,7 @@ export const GridItem = ({ children, href, tecnologia, thumbnail }) => (
   )
 
 
-  export const WorkGridItem = ({ children, link, tecnologia, thumbnail }) => (
+  export const WorkGridItem = ({ children, link, tecnologia, thumbnail, bg1 }) => (
     // <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
     //   <NextLink href={`${link}`} target='_blank' scroll={false} passHref>
     //   <Image
@@ -53,7 +53,7 @@ export const GridItem = ({ children, href, tecnologia, thumbnail }) => (
     // </Box>
     <NextLink href={`${link}`} target='_blank' scroll={false} passHref>
     <a target='_blank'rel="noopener noreferrer">
-    <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' cursor="pointer">
+    <Box maxW='sm' borderWidth='3px' borderColor={useColorModeValue('blackAlpha.200', 'whiteAlpha.300')}borderRadius='lg' overflow='hidden' cursor="pointer" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}>
     <Image src={thumbnail} alt={thumbnail} />
 
     <Box p='6'>
