@@ -1,4 +1,4 @@
-import { Container, Box, Heading, Image, Button} from "@chakra-ui/react";
+import { Container, Box, Heading, Image, Button, useColorModeValue, Text} from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import NextLink from 'next/link';
@@ -12,18 +12,16 @@ const Page = () => {
     return (     
         <Layout>
         <Container >            
-            {/* <Box borderRadius="10" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={10} mb={6} align='center'>
-                
-            </Box> */}
+            
             
             <Box display={{md:'flex'}}>
                 <Box flexGrow={1}>
                     <Heading as='h2' variant='page-title'>
                         Pedro Costa
                     </Heading>
-                    <Paragraph margiu>
+                    <Text mt={2}>
                         Desenvolvedor de software
-                    </Paragraph>
+                    </Text>
                 </Box>
                 <Box flexShrink={0} mt={{base:4, md:0}} ml={{md:6}} align='center'>
                     <Image borderColor='whiteAlpha.800' borderWidth={2} borderStyle='solid' maxWidth='100px' display='inline-block' borderRadius='full' src='/images/foto.png' alt='Profile Photo' />
@@ -31,20 +29,30 @@ const Page = () => {
             </Box>
 
             <Section delay={0.1}>
-                <Heading as='h3' variant='section-title' style={{textDecoration: 'none'}} >
-                    Sobre
-                </Heading>
-                <Paragraph>Estudante de Ciência da Computação e Desenvolvedor focado em Delphi e Web.
-                </Paragraph>
-                <Box align='center' my={4}>
-                    <NextLink href='https://github.com/CallMePeterD'>
-                        <a target='_blank'rel="noopener noreferrer">
-                        <Button rightIcon={<ChevronRightIcon/>} colorScheme='teal'>
-                            Github
-                        </Button>
-                        </a>
-                    </NextLink>
-                </Box>
+            <Box borderRadius="10" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={10} mb={6} mt={6} text_align='center' align='center'>
+            <Paragraph>
+                Estudante de Ciência da Computação e Desenvolvedor focado em Delphi e Web.
+            </Paragraph> 
+            </Box>
+                
+            <Box align='center' my={4} >
+                <NextLink href='https://github.com/CallMePeterD'>
+                    <a target='_blank'rel="noopener noreferrer">
+                    <Button rightIcon={<ChevronRightIcon/>} colorScheme='teal' m={4}>
+                        Github
+                    </Button>
+                    </a>
+                </NextLink>
+                
+                <NextLink href='https://www.linkedin.com/in/bettercallpedro/'>
+                    <a target='_blank'rel="noopener noreferrer">
+                    <Button rightIcon={<ChevronRightIcon/>} colorScheme='teal' m={4}>
+                        Linkedin
+                    </Button>
+                    </a>
+                </NextLink>
+            </Box>
+                
             </Section>
         </Container>
         </Layout>   
