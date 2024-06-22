@@ -25,7 +25,7 @@ export const GridItem = ({ children, href, tecnologia, thumbnail }) => (
   )
 
 
-  export const WorkGridItem = ({ children, link, tecnologia, thumbnail, bg1 }) => (
+  export const WorkGridItem = ({ children, link, tecnologia, thumbnail}) => (
     // <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
     //   <NextLink href={`${link}`} target='_blank' scroll={false} passHref>
     //   <Image
