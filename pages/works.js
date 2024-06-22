@@ -36,7 +36,7 @@ const Works = () => {
             </Heading>
             <SimpleGrid columns={[1,1,2]} gap={6}>
             <Section>
-                <WorkGridItem link='https://callmepeterd.itch.io/save-the-chicken' tecnologia="Python" thumbnail={galinha}>
+                <WorkGridItem link='https://callmepeterd.itch.io/save-the-chicken' tecnologia="Pygame" thumbnail={galinha}>
                         Projeto de Faculdade usando Python
                     </WorkGridItem>
                 </Section>
