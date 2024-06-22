@@ -20,10 +20,10 @@ const About = () => {
                 </Heading>
                 <Box mb={5}>
                     <Text fontWeight="bold">Fidelity Pesquisas Cadastrais</Text>
-                    <Text>Manutenção e atualização de um sistema legado desenvolvido em Delphi, e desenvolvimento de aplicações web utilizando PHP e JavaScript.</Text>
+                    <Text>Desenvolvedor</Text>
                     <Text fontSize="sm">2022 - Present</Text>
                     <Text>
-                        
+                    Manutenção e atualização de um sistema legado desenvolvido em Delphi, e desenvolvimento de aplicações web utilizando PHP e JavaScript. 
                     </Text>
                 </Box>
                 <Box mb={5}>
@@ -39,8 +39,8 @@ const About = () => {
                     Educação
                 </Heading>
                 <Box>
-                    <Text fontWeight="bold">University of Illinois Urbana-Champaign</Text>
-                    <Text fontSize="sm">Presente</Text>
+                    <Text fontWeight="bold">Universidade Federal Fluminense</Text>
+                    <Text fontSize="sm">Cursando</Text>
                     <Text>
                         Bacharelado em Ciência da Computação.
                     </Text>
