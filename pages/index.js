@@ -1,9 +1,8 @@
-import { Container, Box, Heading, Image, useColorModeValue, Button, Text } from "@chakra-ui/react";
+import { Container, Box, Heading, Image, Button} from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import NextLink from 'next/link';
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { BioSection, BioYear } from "../components/bio";
 import Layout from "../components/layouts/article";
 
 

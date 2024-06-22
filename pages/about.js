@@ -1,9 +1,5 @@
-import { Container, Heading, SimpleGrid, Box, Text } from '@chakra-ui/react'
+import { Container, Heading, Box, Text } from '@chakra-ui/react'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
-import galinha from '../public/images/works/galinha.png'
-import netflix from '../public/images/works/netflix.png'
-import breve from '../public/images/works/Design_sem_nome__1_-removebg-preview.png'
 import Layout from '../components/layouts/article'
 
 
