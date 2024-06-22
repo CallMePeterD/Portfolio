@@ -1,7 +1,7 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/section';
 import { WorkGridItem } from '../components/grid-item';
-import montyhall from '../public/images/works/MontyHall.png';
+import montyhall from '../public/images/works/montyhall.png';
 import galinha from '../public/images/works/galinha.png';
 import netflix from '../public/images/works/netflix.png';
 import flask from '../public/images/works/flask.png';
