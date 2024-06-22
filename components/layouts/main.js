@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Navbar from '../navbar';
-import {Box, Container } from '@chakra-ui/react';
+//import {Box, Container } from '@chakra-ui/react';
 import VoxelComp from '../voxel-comp';
 import NoSsr from '../no-ssr';
+import { Container, Box, Heading, Image, useColorModeValue, Button, Text, Paragraph } from "@chakra-ui/react";
 
 const Main = ({children, router}) => {
     return(
