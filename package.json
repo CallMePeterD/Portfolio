@@ -12,6 +12,9 @@
   "keywords": [],
   "author": "Pedro Costa",
   "license": "MIT",
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
     "@chakra-ui/react": "^1.7.2",
