@@ -16,9 +16,11 @@ import {
 } from '@chakra-ui/react';
 import {HamburgerIcon} from '@chakra-ui/icons';
 import ThemeToggleButton from "./theme-toggle-button";
+import LanguageToggleButton from "./language-toggle-button";
+import { useT } from "../libs/i18n";
 
 const LinkItem = ({href, path, children}) => {
-    const active = path === href
+    const active = path === href || path.startsWith(`${href}/`)
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
         <NextLink href={href}>
@@ -36,6 +38,7 @@ const LinkItem = ({href, path, children}) => {
 
 const Navbar = props => {
     const { path } = props
+    const t = useT()
 
     return (
         <Box
@@ -62,14 +65,15 @@ const Navbar = props => {
             mt={{base:4, nmd:0}}
             >
                 <LinkItem href='/works' path={path}>
-                    Projetos
+                    {t.nav.works}
                 </LinkItem>
                 <LinkItem href='/about' path={path}>
-                    Sobre
+                    {t.nav.about}
                 </LinkItem>
             </Stack>
 
             <Box flex={1} align='right'>
+                <LanguageToggleButton/>
                 <ThemeToggleButton/>
                 <Box ml={2} display={{base: 'inline-block', md:'none'}}>
                     <Menu>
@@ -80,10 +84,10 @@ const Navbar = props => {
                         aria-label='Options'/>
                             <MenuList>
                                 <NextLink href='/works' passHref>
-                                    <MenuItem as={Link}>Projetos</MenuItem>
+                                    <MenuItem as={Link}>{t.nav.works}</MenuItem>
                                 </NextLink>
                                 <NextLink href='/about' passHref>
-                                    <MenuItem as={Link}>Sobre</MenuItem>
+                                    <MenuItem as={Link}>{t.nav.about}</MenuItem>
                                 </NextLink>
                             </MenuList>
                     </Menu>
